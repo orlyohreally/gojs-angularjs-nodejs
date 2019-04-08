@@ -1,0 +1,18 @@
+<md-button ng-if="!data" class="md-raised md-primary" ng-click="getData()"
+  >Plot graph</md-button
+>
+<div ng-show="!!data">
+  <div id="myDiagramDiv" class="plot"></div>
+  <select id="myPaths" class="paths" size="10"></select>
+  <!-- <md-list flex>
+    <md-list-item ng-click="selectPath(path)" ng-repeat="path in paths">{{
+      path.text
+    }}</md-list-item>
+  </md-list>
+
+  <md-select ng-model="currentPath" id="myPaths">
+    <md-option ng-repeat="path in paths" ng-value="path.text">
+      {{ path.text }}
+    </md-option>
+  </md-select> -->
+</div>
